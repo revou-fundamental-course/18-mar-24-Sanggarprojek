@@ -1,0 +1,305 @@
+:root {
+  --primary: #b6895b;
+  --bg: #010101;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--bg);
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgb(0, 0, 0, 0 0.8);
+  border-bottom: 1px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  z-index: 9999;
+}
+
+.img-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.navbar-extra {
+  color: antiquewhite;
+  margin: 0 0.5rem;
+}
+
+.navbar-nav a {
+  height: 20px;
+  margin: 0 8px;
+  color: #fff;
+  display: inline-block;
+}
+
+.navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 4px;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s;
+}
+
+.navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+/* hero section */
+.hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: center;
+}
+
+.hero h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px;
+  flex-wrap: wrap;
+  /* border: 1px solid white; */
+}
+
+.img-content {
+  margin: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px;
+  flex-direction: column;
+  background-color: #6b6969;
+  border-radius: 10%;
+}
+
+.img-content button {
+  /* text-align: center; */
+  padding: 8px;
+}
+
+.button-content button {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+.img-content p {
+  text-align: center;
+}
+
+#img-slicezing {
+  width: 600px;
+  height: 400px;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 10%;
+  padding: 12px;
+}
+
+.p-img-content {
+  text-align: start;
+  padding: 16px;
+}
+
+.form-container {
+  margin: 16px;
+  background-color: #6b6969;
+  width: 60vh;
+  height: 90vh;
+  border-radius: 7%;
+}
+
+.form-content #input {
+  padding: 16px;
+}
+
+.title-form h2,
+h5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#input {
+  padding-left: 8px;
+  height: 3vh;
+  width: 35vh;
+  color: var(--bg);
+  border: 1px solid var(--bg);
+}
+
+#select {
+  height: 4vh;
+  width: 30vh;
+}
+
+.button-send #tombol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: var(--primary);
+}
+
+button {
+  width: 25vh;
+  height: 3vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8px;
+}
+
+.p-img-content {
+  /* text-align: start; */
+  font-style: italic;
+  padding: 2.5vh;
+}
+
+.section-profil {
+  display: flex;
+  align-items: center;
+  padding: 24;
+  text-align: center;
+}
+
+.profil-user {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  /* flex-direction: column; */
+}
+
+.profil-user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: center;
+  display: flex;
+  align-items: center;
+}
+
+.profil-user h3 {
+  text-align: center;
+  flex-direction: column;
+}
+
+.profil-user .status-profil {
+  font-style: italic;
+  flex-direction: column;
+}
+
+.name-status {
+  flex-direction: column;
+}
+
+.title-feature img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.title-feature h2 {
+  max-width: 600px;
+  padding: 16px;
+}
+
+.about-feature {
+  display: flex;
+  align-items: center;
+}
+footer {
+  background-color: var(--primary);
+  height: 20vh;
+  padding: 24px;
+  text-align: center;
+}
+
+.sosial a {
+  margin: 8px;
+  color: #fff;
+  padding: 8px;
+}
+
+.sosial a:hover {
+  color: var(--bg);
+}
+
+.links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+  justify-content: center;
+}
+
+.links a:hover {
+  color: var(--bg);
+}
+
+.kredit {
+  padding: 8px;
+  font-size: 0.8rem;
+}
+
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  #hamburger-menu {
+    display: inline-block;
+  }
+}
+
+/* mobile phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 60%;
+  }
+}
